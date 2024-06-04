@@ -15,7 +15,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", builder =>
         builder
-            .WithOrigins("http://localhost:4200", "http://localhost:4201", "http://localhost:8080","http://localhost:8081") 
+            .WithOrigins("http://localhost:4200", "http://localhost:4201", "http://localhost:8080","http://localhost:8081","http://newloadbalancer-1128782211.eu-north-1.elb.amazonaws.com:5500") 
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials());
