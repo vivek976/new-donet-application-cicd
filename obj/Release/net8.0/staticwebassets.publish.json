@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "z+cSVq2mpIpLO/2F3BEYaWH2ZSPy+HSkbhvCuFHzkzo=",
+  "Source": "dotnetfordocker",
+  "BasePath": "_content/dotnetfordocker",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

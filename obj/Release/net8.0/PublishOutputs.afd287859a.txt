@@ -1,0 +1,11 @@
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\dotnetfordocker.exe
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\appsettings.Development.json
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\appsettings.json
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\dotnetfordocker.dll
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\dotnetfordocker.deps.json
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\dotnetfordocker.runtimeconfig.json
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\dotnetfordocker.pdb
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\Microsoft.OpenApi.dll
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\dotnetForDocker\dotnetfordocker\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
