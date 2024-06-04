@@ -1,24 +1,23 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-
-// Swagger/OpenAPI
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// CORS
+// Configure CORS to allow all origins
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", builder =>
-        builder
-            .AllowAnyOrigin() // Allow all origins
+    options.AddPolicy("CorsPolicy", policyBuilder =>
+        policyBuilder
+            .AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader()
-            .AllowCredentials());
+            .AllowAnyHeader());
 });
 
 var app = builder.Build();
@@ -34,7 +33,7 @@ app.UseHttpsRedirection();
 
 app.UseRouting();
 
-// CORS middleware
+// Use the CORS policy
 app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
@@ -42,18 +41,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-namespace Demo
-{
-    class Program
-    {
-        private readonly ILogger<Program> logger;
-        public Program(ILogger<Program> logger)
-        {
-            this.logger = logger;
-        }
-        static void Main()
-        {
-        }
-    }
-}
