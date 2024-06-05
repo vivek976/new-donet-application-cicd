@@ -1,8 +1,8 @@
  FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 83
+EXPOSE 8081
 
-ENV ASPNETCORE_URLS=http://+:83
+ENV ASPNETCORE_URLS=http://+:8081
 ENV DOTNET_GENERATE_ASPNET_CERTIFICATES=false
 
 USER app
