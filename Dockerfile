@@ -17,7 +17,7 @@ WORKDIR "/src/."
 RUN dotnet build "dotnetfordocker.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
-ARG configuration=Release
+ARG configuration=Release 
 RUN dotnet publish "dotnetfordocker.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
