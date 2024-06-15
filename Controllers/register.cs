@@ -13,7 +13,7 @@ namespace dotnetfordocker.Controllers
         }
         [HttpGet]
         public string RegistrationForm()
-        {
+        { 
             return "You are successfully signed up";
             
         }
