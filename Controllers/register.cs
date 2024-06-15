@@ -12,7 +12,7 @@ namespace dotnetfordocker.Controllers
             _logger = logger;
         }
         [HttpGet]
-        public IActionResult RegistrationForm()
+        public string RegistrationForm()
         {
             return "You are successfully signed up";
             
