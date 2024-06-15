@@ -14,7 +14,7 @@ namespace dotnetfordocker.Controllers
         [HttpGet]
         public IActionResult RegistrationForm()
         {
-            return Ok("You are successfully signed up");
+            return "You are successfully signed up";
             
         }
     }
