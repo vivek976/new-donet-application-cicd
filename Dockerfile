@@ -1,6 +1,6 @@
  FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 4200
 
 ENV DOTNET_GENERATE_ASPNET_CERTIFICATES=false
 
